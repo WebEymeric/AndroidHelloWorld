@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">AndroidHelloWorld</string>
-    <string name="hello_world">Hello world my Lord!</string>
+    <string name="hello_world">Hello world my Lord !123PRE!</string>
     <string name="action_settings">Settings</string>
+    <string name="boutonTest">-Test-</string>
+    <string name="editTextWelcome">Pseudo</string>
 </resources>
