@@ -34,6 +34,27 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         bTest = (Button)findViewById(R.id.buttonTestWelcome);
         bTest.setOnTouchListener(this);
         bTest.setOnClickListener(this);
+
+        Button b = (Button)findViewById(R.id.buttonBig);
+        b.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                // Comme l'évènement nous donne la vue concernée par le toucher, on le récupère et on le caste en Button
+                Button bouton = (Button)view;
+                // On récupère la largeur du bouton
+                int largeur = bouton.getWidth();
+                // On récupère la hauteur du bouton
+                int hauteur = bouton.getHeight();
+                // On récupère la coordonnée sur l'abscisse (X) de l'évènement
+                float x = event.getX();
+                // On récupère la coordonnée sur l'ordonnée (Y) de l'évènement
+                float y = event.getY();
+                // Puis on change la taille du texte selon la formule indiquée dans l'énoncé
+                bouton.setTextSize(Math.abs(x - largeur / 2) + Math.abs(y - hauteur / 2));
+                // Le toucher est fini, on veut continuer à détecter les touchers d'après
+                return true;
+            }
+        });
     }
 
     @Override
@@ -57,5 +78,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 break;
     /* etc. */
         }
+
     }
 }
