@@ -3,5 +3,6 @@
     <string name="hello_world">Hello world my Lord !123PRE!</string>
     <string name="action_settings">Settings</string>
     <string name="boutonTest">-Test-</string>
-    <string name="editTextWelcome">Pseudo</string>
+    <string name="boutonTestNav">-TestNav-</string>
+    <string name="editTextWelcome">Adresse</string>
 </resources>

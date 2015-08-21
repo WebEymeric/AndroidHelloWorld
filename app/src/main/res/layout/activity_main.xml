@@ -43,10 +43,10 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:id="@+id/buttonTestWelcome2"
+        android:id="@+id/buttonTestNav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/boutonTest"
+        android:text="@string/boutonTestNav"
         android:layout_below="@+id/buttonTestWelcome"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
